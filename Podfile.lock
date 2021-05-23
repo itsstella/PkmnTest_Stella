@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - ImageViewer (0.1.4)
+  - ObjectMapper (3.5.3)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - ImageViewer (from `https://github.com/tovkal/ImageViewer`)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  ImageViewer:
+    :git: https://github.com/tovkal/ImageViewer
+
+CHECKOUT OPTIONS:
+  ImageViewer:
+    :commit: 76944a7b1192d1a0af6767f33804a69bd2d9e743
+    :git: https://github.com/tovkal/ImageViewer
+
+SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  ImageViewer: 0c79f53859883f4215b0ceeac4c7e4d3caede8a3
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: 6faea9472dc52b335fd106388e763dd471531585
+
+COCOAPODS: 1.10.1

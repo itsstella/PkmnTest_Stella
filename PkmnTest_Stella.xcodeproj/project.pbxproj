@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060C6A492658CC4E009929EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A482658CC4E009929EF /* AppDelegate.swift */; };
+		060C6A4B2658CC4E009929EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A4A2658CC4E009929EF /* SceneDelegate.swift */; };
+		060C6A4D2658CC4E009929EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A4C2658CC4E009929EF /* ViewController.swift */; };
+		060C6A502658CC4E009929EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060C6A4E2658CC4E009929EF /* Main.storyboard */; };
+		060C6A522658CC50009929EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060C6A512658CC50009929EF /* Assets.xcassets */; };
+		060C6A552658CC50009929EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060C6A532658CC50009929EF /* LaunchScreen.storyboard */; };
+		060C6A602658CC50009929EF /* PkmnTest_StellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A5F2658CC50009929EF /* PkmnTest_StellaTests.swift */; };
+		060C6A6B2658CC51009929EF /* PkmnTest_StellaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A6A2658CC51009929EF /* PkmnTest_StellaUITests.swift */; };
+		060C6A7F2658CD21009929EF /* PokemonCardListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A7E2658CD21009929EF /* PokemonCardListProtocol.swift */; };
+		060C6A812658CD26009929EF /* PokemonCardListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A802658CD26009929EF /* PokemonCardListPresenter.swift */; };
+		060C6A832658CD2F009929EF /* PokemonCardListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A822658CD2F009929EF /* PokemonCardListInteractor.swift */; };
+		060C6A852658CD36009929EF /* PokemonCardListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A842658CD36009929EF /* PokemonCardListRouter.swift */; };
+		060C6A872658CD41009929EF /* PokemonCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A862658CD41009929EF /* PokemonCardModel.swift */; };
+		060C6A902658E4AB009929EF /* PokemonCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C6A8E2658E4AB009929EF /* PokemonCardCell.swift */; };
+		060C6A912658E4AB009929EF /* PokemonCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 060C6A8F2658E4AB009929EF /* PokemonCardCell.xib */; };
+		061E397026592C8400BCA6E1 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E396F26592C8400BCA6E1 /* IndicatorCell.swift */; };
+		061E397226592EB300BCA6E1 /* IndicatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061E397126592EB300BCA6E1 /* IndicatorCell.xib */; };
+		061E39762659397900BCA6E1 /* PokemonCardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E39742659397900BCA6E1 /* PokemonCardDetail.swift */; };
+		061E39772659397900BCA6E1 /* PokemonCardDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 061E39752659397900BCA6E1 /* PokemonCardDetail.xib */; };
+		061E397A26593A6B00BCA6E1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E397926593A6B00BCA6E1 /* Constant.swift */; };
+		061E39812659EBD200BCA6E1 /* PokemonCardDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E39802659EBD200BCA6E1 /* PokemonCardDetailProtocol.swift */; };
+		061E39832659EBDB00BCA6E1 /* PokemonCardDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E39822659EBDB00BCA6E1 /* PokemonCardDetailPresenter.swift */; };
+		061E39852659EBE300BCA6E1 /* PokemonCardDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E39842659EBE300BCA6E1 /* PokemonCardDetailInteractor.swift */; };
+		061E39872659EBEA00BCA6E1 /* PokemonCardDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E39862659EBEA00BCA6E1 /* PokemonCardDetailRouter.swift */; };
+		086F1DAD3E970B3FF9E0C361 /* Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AA3C677DCB0C0C1E86E60 /* Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework */; };
+		2055F8358C114BF94BEA7987 /* Pods_PkmnTest_StellaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A1BC2B22E8152C6C5DC201 /* Pods_PkmnTest_StellaTests.framework */; };
+		30BD1825E43C45C649675818 /* Pods_PkmnTest_Stella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42675A8ED9C8D573026E1343 /* Pods_PkmnTest_Stella.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		060C6A5C2658CC50009929EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 060C6A3D2658CC4E009929EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060C6A442658CC4E009929EF;
+			remoteInfo = PkmnTest_Stella;
+		};
+		060C6A672658CC51009929EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 060C6A3D2658CC4E009929EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060C6A442658CC4E009929EF;
+			remoteInfo = PkmnTest_Stella;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043AA3C677DCB0C0C1E86E60 /* Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060C6A452658CC4E009929EF /* PkmnTest_Stella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PkmnTest_Stella.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		060C6A482658CC4E009929EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		060C6A4A2658CC4E009929EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		060C6A4C2658CC4E009929EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		060C6A4F2658CC4E009929EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		060C6A512658CC50009929EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		060C6A542658CC50009929EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		060C6A562658CC50009929EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		060C6A5B2658CC50009929EF /* PkmnTest_StellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PkmnTest_StellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		060C6A5F2658CC50009929EF /* PkmnTest_StellaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmnTest_StellaTests.swift; sourceTree = "<group>"; };
+		060C6A612658CC50009929EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		060C6A662658CC51009929EF /* PkmnTest_StellaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PkmnTest_StellaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		060C6A6A2658CC51009929EF /* PkmnTest_StellaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PkmnTest_StellaUITests.swift; sourceTree = "<group>"; };
+		060C6A6C2658CC51009929EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		060C6A7E2658CD21009929EF /* PokemonCardListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardListProtocol.swift; sourceTree = "<group>"; };
+		060C6A802658CD26009929EF /* PokemonCardListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardListPresenter.swift; sourceTree = "<group>"; };
+		060C6A822658CD2F009929EF /* PokemonCardListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardListInteractor.swift; sourceTree = "<group>"; };
+		060C6A842658CD36009929EF /* PokemonCardListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardListRouter.swift; sourceTree = "<group>"; };
+		060C6A862658CD41009929EF /* PokemonCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardModel.swift; sourceTree = "<group>"; };
+		060C6A8E2658E4AB009929EF /* PokemonCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardCell.swift; sourceTree = "<group>"; };
+		060C6A8F2658E4AB009929EF /* PokemonCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCardCell.xib; sourceTree = "<group>"; };
+		061E396F26592C8400BCA6E1 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		061E397126592EB300BCA6E1 /* IndicatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndicatorCell.xib; sourceTree = "<group>"; };
+		061E39742659397900BCA6E1 /* PokemonCardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardDetail.swift; sourceTree = "<group>"; };
+		061E39752659397900BCA6E1 /* PokemonCardDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCardDetail.xib; sourceTree = "<group>"; };
+		061E397926593A6B00BCA6E1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		061E39802659EBD200BCA6E1 /* PokemonCardDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardDetailProtocol.swift; sourceTree = "<group>"; };
+		061E39822659EBDB00BCA6E1 /* PokemonCardDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardDetailPresenter.swift; sourceTree = "<group>"; };
+		061E39842659EBE300BCA6E1 /* PokemonCardDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardDetailInteractor.swift; sourceTree = "<group>"; };
+		061E39862659EBEA00BCA6E1 /* PokemonCardDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardDetailRouter.swift; sourceTree = "<group>"; };
+		361E5F5FC2F66BB772804950 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_Stella-PkmnTest_StellaUITests.release.xcconfig"; path = "Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42675A8ED9C8D573026E1343 /* Pods_PkmnTest_Stella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PkmnTest_Stella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BF3864745D8C4D77256CC5 /* Pods-PkmnTest_StellaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_StellaTests.debug.xcconfig"; path = "Target Support Files/Pods-PkmnTest_StellaTests/Pods-PkmnTest_StellaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E6B5761085FD12B4B5B25A1 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_Stella-PkmnTest_StellaUITests.debug.xcconfig"; path = "Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA7716694DF9C81ABC95AD6 /* Pods-PkmnTest_StellaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_StellaTests.release.xcconfig"; path = "Target Support Files/Pods-PkmnTest_StellaTests/Pods-PkmnTest_StellaTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB1BFFCDD1158A63FCAFC3B5 /* Pods-PkmnTest_Stella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_Stella.release.xcconfig"; path = "Target Support Files/Pods-PkmnTest_Stella/Pods-PkmnTest_Stella.release.xcconfig"; sourceTree = "<group>"; };
+		D3A1BC2B22E8152C6C5DC201 /* Pods_PkmnTest_StellaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PkmnTest_StellaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FE99FC2CA355020A1115B4 /* Pods-PkmnTest_Stella.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PkmnTest_Stella.debug.xcconfig"; path = "Target Support Files/Pods-PkmnTest_Stella/Pods-PkmnTest_Stella.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		060C6A422658CC4E009929EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BD1825E43C45C649675818 /* Pods_PkmnTest_Stella.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A582658CC50009929EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2055F8358C114BF94BEA7987 /* Pods_PkmnTest_StellaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A632658CC51009929EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086F1DAD3E970B3FF9E0C361 /* Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060C6A3C2658CC4E009929EF = {
+			isa = PBXGroup;
+			children = (
+				060C6A472658CC4E009929EF /* PkmnTest_Stella */,
+				060C6A5E2658CC50009929EF /* PkmnTest_StellaTests */,
+				060C6A692658CC51009929EF /* PkmnTest_StellaUITests */,
+				060C6A462658CC4E009929EF /* Products */,
+				563DD20EE63AD77173D686B8 /* Pods */,
+				48F53D37033DD0E3375B7015 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		060C6A462658CC4E009929EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A452658CC4E009929EF /* PkmnTest_Stella.app */,
+				060C6A5B2658CC50009929EF /* PkmnTest_StellaTests.xctest */,
+				060C6A662658CC51009929EF /* PkmnTest_StellaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		060C6A472658CC4E009929EF /* PkmnTest_Stella */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A7C2658CCDF009929EF /* Assets */,
+				060C6A7B2658CCCE009929EF /* Config */,
+				061E397826593A5900BCA6E1 /* Constant */,
+				060C6A7A2658CCC8009929EF /* Model */,
+				060C6A782658CCA2009929EF /* Screen */,
+				061E39882659F44600BCA6E1 /* Widget */,
+				060C6A562658CC50009929EF /* Info.plist */,
+			);
+			path = PkmnTest_Stella;
+			sourceTree = "<group>";
+		};
+		060C6A5E2658CC50009929EF /* PkmnTest_StellaTests */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A5F2658CC50009929EF /* PkmnTest_StellaTests.swift */,
+				060C6A612658CC50009929EF /* Info.plist */,
+			);
+			path = PkmnTest_StellaTests;
+			sourceTree = "<group>";
+		};
+		060C6A692658CC51009929EF /* PkmnTest_StellaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A6A2658CC51009929EF /* PkmnTest_StellaUITests.swift */,
+				060C6A6C2658CC51009929EF /* Info.plist */,
+			);
+			path = PkmnTest_StellaUITests;
+			sourceTree = "<group>";
+		};
+		060C6A782658CCA2009929EF /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A7D2658CCEE009929EF /* LaunchScreen */,
+				060C6A792658CCAC009929EF /* PokemonCardList */,
+				061E3973265938B900BCA6E1 /* PokemonCardDetail */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		060C6A792658CCAC009929EF /* PokemonCardList */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A4C2658CC4E009929EF /* ViewController.swift */,
+				060C6A4E2658CC4E009929EF /* Main.storyboard */,
+				060C6A7E2658CD21009929EF /* PokemonCardListProtocol.swift */,
+				060C6A802658CD26009929EF /* PokemonCardListPresenter.swift */,
+				060C6A822658CD2F009929EF /* PokemonCardListInteractor.swift */,
+				060C6A842658CD36009929EF /* PokemonCardListRouter.swift */,
+			);
+			path = PokemonCardList;
+			sourceTree = "<group>";
+		};
+		060C6A7A2658CCC8009929EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A862658CD41009929EF /* PokemonCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		060C6A7B2658CCCE009929EF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A482658CC4E009929EF /* AppDelegate.swift */,
+				060C6A4A2658CC4E009929EF /* SceneDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		060C6A7C2658CCDF009929EF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A512658CC50009929EF /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		060C6A7D2658CCEE009929EF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A532658CC50009929EF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		060C6A8B2658E47C009929EF /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				061E398A265A064B00BCA6E1 /* Indicator */,
+				061E3989265A064400BCA6E1 /* Card */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		061E3973265938B900BCA6E1 /* PokemonCardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				061E39742659397900BCA6E1 /* PokemonCardDetail.swift */,
+				061E39752659397900BCA6E1 /* PokemonCardDetail.xib */,
+				061E39802659EBD200BCA6E1 /* PokemonCardDetailProtocol.swift */,
+				061E39822659EBDB00BCA6E1 /* PokemonCardDetailPresenter.swift */,
+				061E39842659EBE300BCA6E1 /* PokemonCardDetailInteractor.swift */,
+				061E39862659EBEA00BCA6E1 /* PokemonCardDetailRouter.swift */,
+			);
+			path = PokemonCardDetail;
+			sourceTree = "<group>";
+		};
+		061E397826593A5900BCA6E1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				061E397926593A6B00BCA6E1 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		061E39882659F44600BCA6E1 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A8B2658E47C009929EF /* UITableViewCell */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		061E3989265A064400BCA6E1 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				060C6A8E2658E4AB009929EF /* PokemonCardCell.swift */,
+				060C6A8F2658E4AB009929EF /* PokemonCardCell.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		061E398A265A064B00BCA6E1 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				061E396F26592C8400BCA6E1 /* IndicatorCell.swift */,
+				061E397126592EB300BCA6E1 /* IndicatorCell.xib */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		48F53D37033DD0E3375B7015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42675A8ED9C8D573026E1343 /* Pods_PkmnTest_Stella.framework */,
+				043AA3C677DCB0C0C1E86E60 /* Pods_PkmnTest_Stella_PkmnTest_StellaUITests.framework */,
+				D3A1BC2B22E8152C6C5DC201 /* Pods_PkmnTest_StellaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		563DD20EE63AD77173D686B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0FE99FC2CA355020A1115B4 /* Pods-PkmnTest_Stella.debug.xcconfig */,
+				CB1BFFCDD1158A63FCAFC3B5 /* Pods-PkmnTest_Stella.release.xcconfig */,
+				9E6B5761085FD12B4B5B25A1 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.debug.xcconfig */,
+				361E5F5FC2F66BB772804950 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.release.xcconfig */,
+				58BF3864745D8C4D77256CC5 /* Pods-PkmnTest_StellaTests.debug.xcconfig */,
+				9FA7716694DF9C81ABC95AD6 /* Pods-PkmnTest_StellaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		060C6A442658CC4E009929EF /* PkmnTest_Stella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060C6A6F2658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_Stella" */;
+			buildPhases = (
+				5A9F3BEB1A30ADED49EFC8F0 /* [CP] Check Pods Manifest.lock */,
+				060C6A412658CC4E009929EF /* Sources */,
+				060C6A422658CC4E009929EF /* Frameworks */,
+				060C6A432658CC4E009929EF /* Resources */,
+				F13423348341D91693ABF8AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PkmnTest_Stella;
+			productName = PkmnTest_Stella;
+			productReference = 060C6A452658CC4E009929EF /* PkmnTest_Stella.app */;
+			productType = "com.apple.product-type.application";
+		};
+		060C6A5A2658CC50009929EF /* PkmnTest_StellaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060C6A722658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_StellaTests" */;
+			buildPhases = (
+				080C9F712BD21930342B1F57 /* [CP] Check Pods Manifest.lock */,
+				060C6A572658CC50009929EF /* Sources */,
+				060C6A582658CC50009929EF /* Frameworks */,
+				060C6A592658CC50009929EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				060C6A5D2658CC50009929EF /* PBXTargetDependency */,
+			);
+			name = PkmnTest_StellaTests;
+			productName = PkmnTest_StellaTests;
+			productReference = 060C6A5B2658CC50009929EF /* PkmnTest_StellaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		060C6A652658CC51009929EF /* PkmnTest_StellaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060C6A752658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_StellaUITests" */;
+			buildPhases = (
+				08F80B576EEA45C54FA35DCB /* [CP] Check Pods Manifest.lock */,
+				060C6A622658CC51009929EF /* Sources */,
+				060C6A632658CC51009929EF /* Frameworks */,
+				060C6A642658CC51009929EF /* Resources */,
+				032FC4694AAD1CF89B176838 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				060C6A682658CC51009929EF /* PBXTargetDependency */,
+			);
+			name = PkmnTest_StellaUITests;
+			productName = PkmnTest_StellaUITests;
+			productReference = 060C6A662658CC51009929EF /* PkmnTest_StellaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		060C6A3D2658CC4E009929EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Stella Patricia";
+				TargetAttributes = {
+					060C6A442658CC4E009929EF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					060C6A5A2658CC50009929EF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 060C6A442658CC4E009929EF;
+					};
+					060C6A652658CC51009929EF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 060C6A442658CC4E009929EF;
+					};
+				};
+			};
+			buildConfigurationList = 060C6A402658CC4E009929EF /* Build configuration list for PBXProject "PkmnTest_Stella" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 060C6A3C2658CC4E009929EF;
+			productRefGroup = 060C6A462658CC4E009929EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				060C6A442658CC4E009929EF /* PkmnTest_Stella */,
+				060C6A5A2658CC50009929EF /* PkmnTest_StellaTests */,
+				060C6A652658CC51009929EF /* PkmnTest_StellaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		060C6A432658CC4E009929EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060C6A552658CC50009929EF /* LaunchScreen.storyboard in Resources */,
+				061E397226592EB300BCA6E1 /* IndicatorCell.xib in Resources */,
+				061E39772659397900BCA6E1 /* PokemonCardDetail.xib in Resources */,
+				060C6A522658CC50009929EF /* Assets.xcassets in Resources */,
+				060C6A502658CC4E009929EF /* Main.storyboard in Resources */,
+				060C6A912658E4AB009929EF /* PokemonCardCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A592658CC50009929EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A642658CC51009929EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032FC4694AAD1CF89B176838 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		080C9F712BD21930342B1F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PkmnTest_StellaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08F80B576EEA45C54FA35DCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PkmnTest_Stella-PkmnTest_StellaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A9F3BEB1A30ADED49EFC8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PkmnTest_Stella-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13423348341D91693ABF8AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella/Pods-PkmnTest_Stella-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella/Pods-PkmnTest_Stella-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella/Pods-PkmnTest_Stella-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		060C6A412658CC4E009929EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060C6A832658CD2F009929EF /* PokemonCardListInteractor.swift in Sources */,
+				060C6A4D2658CC4E009929EF /* ViewController.swift in Sources */,
+				060C6A7F2658CD21009929EF /* PokemonCardListProtocol.swift in Sources */,
+				061E39852659EBE300BCA6E1 /* PokemonCardDetailInteractor.swift in Sources */,
+				060C6A812658CD26009929EF /* PokemonCardListPresenter.swift in Sources */,
+				060C6A902658E4AB009929EF /* PokemonCardCell.swift in Sources */,
+				061E39872659EBEA00BCA6E1 /* PokemonCardDetailRouter.swift in Sources */,
+				060C6A492658CC4E009929EF /* AppDelegate.swift in Sources */,
+				061E39832659EBDB00BCA6E1 /* PokemonCardDetailPresenter.swift in Sources */,
+				061E39812659EBD200BCA6E1 /* PokemonCardDetailProtocol.swift in Sources */,
+				061E39762659397900BCA6E1 /* PokemonCardDetail.swift in Sources */,
+				060C6A872658CD41009929EF /* PokemonCardModel.swift in Sources */,
+				061E397026592C8400BCA6E1 /* IndicatorCell.swift in Sources */,
+				060C6A4B2658CC4E009929EF /* SceneDelegate.swift in Sources */,
+				060C6A852658CD36009929EF /* PokemonCardListRouter.swift in Sources */,
+				061E397A26593A6B00BCA6E1 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A572658CC50009929EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060C6A602658CC50009929EF /* PkmnTest_StellaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060C6A622658CC51009929EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060C6A6B2658CC51009929EF /* PkmnTest_StellaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		060C6A5D2658CC50009929EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 060C6A442658CC4E009929EF /* PkmnTest_Stella */;
+			targetProxy = 060C6A5C2658CC50009929EF /* PBXContainerItemProxy */;
+		};
+		060C6A682658CC51009929EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 060C6A442658CC4E009929EF /* PkmnTest_Stella */;
+			targetProxy = 060C6A672658CC51009929EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		060C6A4E2658CC4E009929EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				060C6A4F2658CC4E009929EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		060C6A532658CC50009929EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				060C6A542658CC50009929EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		060C6A6D2658CC51009929EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		060C6A6E2658CC51009929EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		060C6A702658CC51009929EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FE99FC2CA355020A1115B4 /* Pods-PkmnTest_Stella.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_Stella/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-Stella";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		060C6A712658CC51009929EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1BFFCDD1158A63FCAFC3B5 /* Pods-PkmnTest_Stella.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_Stella/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-Stella";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		060C6A732658CC51009929EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BF3864745D8C4D77256CC5 /* Pods-PkmnTest_StellaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_StellaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-StellaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PkmnTest_Stella.app/PkmnTest_Stella";
+			};
+			name = Debug;
+		};
+		060C6A742658CC51009929EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA7716694DF9C81ABC95AD6 /* Pods-PkmnTest_StellaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_StellaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-StellaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PkmnTest_Stella.app/PkmnTest_Stella";
+			};
+			name = Release;
+		};
+		060C6A762658CC51009929EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E6B5761085FD12B4B5B25A1 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_StellaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-StellaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PkmnTest_Stella;
+			};
+			name = Debug;
+		};
+		060C6A772658CC51009929EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361E5F5FC2F66BB772804950 /* Pods-PkmnTest_Stella-PkmnTest_StellaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PkmnTest_StellaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "stellapatricia.PkmnTest-StellaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PkmnTest_Stella;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		060C6A402658CC4E009929EF /* Build configuration list for PBXProject "PkmnTest_Stella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060C6A6D2658CC51009929EF /* Debug */,
+				060C6A6E2658CC51009929EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		060C6A6F2658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_Stella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060C6A702658CC51009929EF /* Debug */,
+				060C6A712658CC51009929EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		060C6A722658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_StellaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060C6A732658CC51009929EF /* Debug */,
+				060C6A742658CC51009929EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		060C6A752658CC51009929EF /* Build configuration list for PBXNativeTarget "PkmnTest_StellaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060C6A762658CC51009929EF /* Debug */,
+				060C6A772658CC51009929EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 060C6A3D2658CC4E009929EF /* Project object */;
+}

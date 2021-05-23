@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cQv-zU-w9T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="KSY-oE-rxA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK3-l1-u8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="cQv-zU-w9T" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAo-c4-Cmj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gTg-n4-vVP"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-545" y="129"/>
+        </scene>
+        <!--Pokemon Cards-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PkmnTest_Stella" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L0E-pd-Ymw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udr-75-nNG">
+                                <rect key="frame" x="70" y="120" width="274" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="udr-75-nNG" secondAttribute="height" multiplier="1:1" id="OEY-ah-o4Z"/>
+                                </constraints>
+                                <state key="normal" image="ic_retry"/>
+                                <connections>
+                                    <action selector="tapRetry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m49-lu-PKC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607843" green="0.12549019610000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XjN-no-SQ4" firstAttribute="trailing" secondItem="udr-75-nNG" secondAttribute="trailing" constant="70" id="fax-bZ-FeN"/>
+                            <constraint firstItem="udr-75-nNG" firstAttribute="leading" secondItem="XjN-no-SQ4" secondAttribute="leading" constant="70" id="n4s-lS-P1p"/>
+                            <constraint firstItem="udr-75-nNG" firstAttribute="top" secondItem="XjN-no-SQ4" secondAttribute="top" constant="32" id="syB-oA-lFp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XjN-no-SQ4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokemon Cards" id="rvs-Ke-4mt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_retry" width="315" height="315"/>
+    </resources>
+</document>

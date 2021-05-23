@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-PkmnTest_Stella-PkmnTest_StellaUITests/Pods-PkmnTest_Stella-PkmnTest_StellaUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/ImageViewer/ImageViewer.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
